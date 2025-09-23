@@ -60,8 +60,3 @@
 
     };
 };
-&sensor {
-    invert-x;
-    invert-y;
-};
-
