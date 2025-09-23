@@ -48,9 +48,9 @@
 
         default_layer {
             bindings = <
-&trans            &kp ESC             &kp L           &kp U           &kp T                                             &kp F        &kp W                  &kp R            &kp Y            &kp P
-&kp Q             &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp MINUS      &kp K        &mt RS(RIGHT_SHIFT) T  &mt RIGHT_GUI N  &mt RIGHT_ALT S  &mt RIGHT_CONTROL H
-&mt LEFT_SHIFT Z  &kp Z               &kp X           &kp C           &kp V             &lt 4 COLON      &kp SEMICOLON  &kp G        &kp D                  &kp M            &kp J            &kp B
+&mt LG(V) LG(C)   &kp ESC             &kp L           &kp U           &kp T                                             &kp F        &kp W                  &kp R            &kp Y            &kp P
+&kp Q             &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RC(SPACE)  &kp K        &mt RS(RIGHT_SHIFT) T  &mt RIGHT_GUI N  &mt RIGHT_ALT S  &mt RIGHT_CONTROL H
+&mt LEFT_SHIFT Z  &kp Z               &kp X           &kp C           &kp V             &kp LG(Z)        &kp LG(F)      &kp G        &kp D                  &kp M            &kp J            &kp B
 &kp LCTRL         &kp LEFT_WIN        &kp LEFT_ALT    &lt 1 DEL       &lt 2 ENTER       &kp BACKSPACE    &kp TAB        &lt 1 SPACE                                                           &lt_to_layer_0 5 A
             >;
 
@@ -60,7 +60,7 @@
         layer_1 {
             bindings = <
 &trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR    &kp PLUS     &trans         &kp PERCENT
-&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &kp EQUAL     &lt 3 MINUS  &kp SLASH      &kp RC(PRCNT)
+&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &kp EQUAL     &lt 3 MINUS  &kp SLASH      &kp QMARK
 &trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK  &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
 &trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                            &kp F12
             >;
@@ -70,10 +70,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &kp PAGE_UP    &kp UP_ARROW  &kp HOME                             &kp CARET         &kp N7        &kp N8        &kp N9        &kp RIGHT_PARENTHESIS
-&trans  &trans  &kp LEFT       &kp DOWN      &kp RIGHT            &kp UNDERSCORE  &kp EXCLAMATION   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0
-&trans  &trans  &kp PAGE_DOWN  &trans        &kp END    &trans    &trans          &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
-&trans  &trans  &trans         &trans        &trans     &trans    &kp DOT         &kp EQUAL                                                   &kp PIPE
+&kp LG(X)  &trans  &kp PAGE_UP    &kp UP_ARROW  &kp HOME                                    &kp CARET         &kp N7        &kp N8        &kp N9        &kp RIGHT_PARENTHESIS
+&trans     &trans  &kp LEFT       &kp DOWN      &kp RIGHT                   &kp UNDERSCORE  &kp EXCLAMATION   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0
+&trans     &trans  &kp PAGE_DOWN  &trans        &kp END    &kp LS(LG(Z))    &trans          &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&trans     &trans  &trans         &trans        &trans     &trans           &kp DOT         &kp EQUAL                                                   &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
