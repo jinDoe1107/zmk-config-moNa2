@@ -51,7 +51,7 @@
 &trans            &kp ESC             &kp L           &kp U           &kp T                                               &kp F            &kp W                  &kp R            &kp Y            &kp P
 &kp Q             &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                     &kp MINUS      &kp K            &mt RS(RIGHT_SHIFT) T  &mt RIGHT_GUI N  &mt RIGHT_ALT S  &mt RIGHT_CONTROL H
 &mt LEFT_SHIFT Z  &kp Z               &kp X           &kp C           &kp V             &lt 4 COLON        &kp SEMICOLON  &kp G            &kp D                  &kp M            &kp J            &kp SLASH
-&kp LCTRL         &kp LEFT_WIN        &kp LEFT_ALT    &lt 1 DEL       &lt 2 ENTER       &lt 3 BACKSPACE    &kp TAB        &lt 1 RC(SPACE)                                                           &kp B
+&kp LCTRL         &kp LEFT_WIN        &kp LEFT_ALT    &lt 1 DEL       &lt 2 ENTER       &lt 3 BACKSPACE    &kp TAB        &lt 1 RC(SPACE)                                                           &lt_to_layer_0 5 A
             >;
 
             sensor-bindings = <&scroll_up_down>;
