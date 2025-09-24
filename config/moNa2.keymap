@@ -48,10 +48,10 @@
 
         default_layer {
             bindings = <
-&mt LG(V) LG(C)       &kp ESC                &kp L           &kp U           &kp LC(SPACE)                                     &kp F        &kp W                  &kp R            &kp Y            &kp P
-&kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RC(SPACE)  &kp K        &mt RS(RIGHT_SHIFT) T  &mt RIGHT_GUI N  &mt RIGHT_ALT S  &lt 6 H
-&none                 &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp LG(F)      &kp G        &kp D                  &kp M            &kp J            &kp B
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &lt 1 DEL       &lt 2 ENTER       &kp BACKSPACE    &lt 7 TAB      &lt 1 SPACE                                                           &lt_to_layer_0 6 A
+&mt LG(V) LG(C)       &kp ESC                &kp L           &kp U           &kp LC(SPACE)                                     &kp F        &kp W              &kp R            &kp Y            &kp P
+&kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RC(SPACE)  &kp K        &mt RIGHT_SHIFT T  &mt RIGHT_GUI N  &mt RIGHT_ALT S  &lt 6 H
+&none                 &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp LG(F)      &kp G        &kp D              &kp M            &kp J            &kp B
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &lt 1 DEL       &lt 2 ENTER       &kp BACKSPACE    &lt 7 TAB      &lt 1 SPACE                                                       &lt_to_layer_0 6 A
             >;
 
             sensor-bindings = <&scroll_up_down>;
