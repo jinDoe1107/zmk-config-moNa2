@@ -60,7 +60,7 @@
         layer_1 {
             bindings = <
 &trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR    &kp PLUS     &trans         &kp PERCENT
-&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &kp EQUAL     &lt 6 MINUS  &kp SLASH      &kp QMARK
+&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &kp EQUAL     &lt 3 MINUS  &kp SLASH      &kp QMARK
 &trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK  &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
 &trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                            &kp F12
             >;
