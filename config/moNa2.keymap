@@ -56,10 +56,10 @@
 
         default_layer {
             bindings = <
-&mt LG(V) LG(C)       &kp ESC                &kp L           &kp U           &kp LC(SPACE)                                     &kp F        &kp W              &kp R            &kp Y    &kp P
+&kp LG(F)             &kp ESC                &kp L           &kp U           &kp LC(SPACE)                                     &kp F        &kp W              &kp R            &kp Y    &kp P
 &kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RC(SPACE)  &kp K        &mt RIGHT_SHIFT T  &mt RIGHT_GUI N  &lt 5 S  &lt 5 H
-&none                 &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp LG(F)      &kp G        &kp D              &kp M            &lt 6 J  &kp B
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &lt 1 DEL       &lt 2 ENTER       &kp BACKSPACE    &lt 7 TAB      &lt 1 SPACE                                               &lt_to_layer_0 6 A
+&mt LG(V) LG(C)       &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp LG(F)      &kp G        &kp D              &kp M            &lt 6 J  &kp B
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &kp DELETE      &lt 2 ENTER       &kp BACKSPACE    &lt 7 TAB      &lt 1 SPACE                                               &lt_to_layer_0 6 A
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -78,10 +78,10 @@
 
         layer_2 {
             bindings = <
-&kp LG(X)  &trans  &kp PAGE_UP              &kp UP_ARROW             &kp HOME                                                     &kp CARET         &kp N7        &kp N8        &kp N9        &kp RIGHT_PARENTHESIS
-&trans     &trans  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_GUI DOWN_ARROW  &mt LEFT_SHIFT RIGHT_ARROW                   &kp UNDERSCORE  &kp EXCLAMATION   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0
-&trans     &trans  &kp PAGE_DOWN            &trans                   &kp END                     &kp LS(LG(Z))    &trans          &kp LEFT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
-&trans     &trans  &trans                   &trans                   &trans                      &trans           &kp DOT         &kp EQUAL                                                   &kp PIPE
+&none      &trans  &kp PAGE_UP              &kp UP_ARROW             &kp HOME                                                     &kp CARET         &kp N7                    &kp N8                  &kp N9                  &kp RIGHT_PARENTHESIS
+&trans     &trans  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_GUI DOWN_ARROW  &mt LEFT_SHIFT RIGHT_ARROW                   &kp UNDERSCORE  &kp EXCLAMATION   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_GUI NUMBER_5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_CONTROL NUMBER_0
+&kp LG(X)  &trans  &kp PAGE_DOWN            &trans                   &kp END                     &kp LS(LG(Z))    &trans          &kp LEFT_BRACKET  &kp NUMBER_1              &kp NUMBER_2            &kp NUMBER_3            &kp BACKSLASH
+&trans     &trans  &trans                   &trans                   &trans                      &trans           &kp DOT         &kp EQUAL                                                                                   &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
