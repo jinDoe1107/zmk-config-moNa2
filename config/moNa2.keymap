@@ -73,7 +73,7 @@
 &trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                                     &kp F12
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         layer_2 {
@@ -95,7 +95,7 @@
 &trans  &trans            &trans             &trans  &kp COMMA          &kp COLON    &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         layer_4 {
