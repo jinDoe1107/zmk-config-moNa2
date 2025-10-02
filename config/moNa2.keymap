@@ -95,7 +95,7 @@
 &trans  &trans            &trans             &trans  &kp COMMA          &kp COLON    &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp LC(DOWN) UP>;
         };
 
         layer_4 {
