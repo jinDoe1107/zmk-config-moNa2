@@ -56,10 +56,10 @@
 
         default_layer {
             bindings = <
-&kp LG(F)             &kp ESC                &kp L           &kp U           &kp LC(SPACE)                                     &kp F        &kp W              &kp R            &kp Y    &kp P
-&kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RC(SPACE)  &kp K        &mt RIGHT_SHIFT T  &mt RIGHT_GUI N  &lt 5 S  &lt 5 H
-&mt LG(V) LG(C)       &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp LG(F)      &kp G        &kp D              &kp M            &lt 6 J  &kp B
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &kp DELETE      &lt 2 ENTER       &kp BACKSPACE    &lt 7 TAB      &lt 1 SPACE                                               &lt_to_layer_0 6 A
+&kp LG(F)             &kp ESC                &kp L           &kp U           &kp F                                         &kp LC(SPACE)  &kp W              &kp R            &kp Y    &kp P
+&kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RG(A)  &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_GUI N  &lt 5 S  &lt 5 H
+&mt LG(V) LG(C)       &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp LG(F)  &kp G          &kp D              &kp M            &lt 6 J  &kp B
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &kp DELETE      &lt 2 ENTER       &kp BACKSPACE    &lt 7 TAB  &lt 1 SPACE                                                 &lt_to_layer_0 6 A
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -67,10 +67,10 @@
 
         layer_1 {
             bindings = <
-&trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR    &kp PLUS     &trans         &kp PERCENT
-&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &kp EQUAL     &lt 3 MINUS  &kp SLASH      &kp QMARK
-&trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK  &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
-&trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                            &kp F12
+&trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR             &kp PLUS     &trans         &kp PERCENT
+&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 3 MINUS  &kp SLASH      &kp QMARK
+&trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK           &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
+&trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                                     &kp F12
             >;
 
             sensor-bindings = <&scroll_up_down>;
