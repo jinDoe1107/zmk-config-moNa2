@@ -21,6 +21,11 @@
             key-positions = <18 17>;
             layers = <5>;
         };
+
+        raycast {
+            bindings = <&kp LA(LEFT_SHIFT)>;
+            key-positions = <37 38>;
+        };
     };
 
     macros {
