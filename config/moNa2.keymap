@@ -74,7 +74,20 @@
             label = "NEW_MACRO";
         };
 
-        win: win {
+        winP: win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 1>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>,
+                <&tog_on 1>;
+
+            label = "WIN";
+        };
+
+        winF: winF {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -84,7 +97,7 @@
                 <&macro_wait_time 500>,
                 <&tog_on 1>;
 
-            label = "WIN";
+            label = "WINF";
         };
     };
 
@@ -203,10 +216,10 @@
 
         layer_7 {
             bindings = <
-&kp CAPSLOCK    &kp F1        &kp F2      &kp F3   &kp F4                     &trans          &trans            &trans        &trans         &trans
-&kp KP_NUMLOCK  &kp F5        &kp F6      &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
-&kp SCROLLLOCK  &kp F9        &kp T       &kp F11  &kp F12  &trans    &trans  &trans          &trans            &trans        &trans         &trans
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_NXT  &trans   &trans   &trans    &trans  &trans                                                         &trans
+&kp CAPSLOCK    &kp F1  &kp F2      &kp F3   &kp F4                     &trans          &trans            &trans        &trans         &trans
+&kp KP_NUMLOCK  &kp F5  &kp F6      &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
+&kp SCROLLLOCK  &kp F9  &kp T       &kp F11  &kp F12  &trans    &trans  &trans          &trans            &trans        &trans         &trans
+&winP           &mac    &bt BT_NXT  &trans   &trans   &trans    &trans  &trans                                                         &trans
             >;
         };
     };
