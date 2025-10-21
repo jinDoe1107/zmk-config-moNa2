@@ -45,7 +45,7 @@
         mc {
             bindings = <&mkp MB3>;
             key-positions = <18 17>;
-            layers = <5>;
+            layers = <6>;
         };
 
         raycast {
@@ -66,7 +66,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_on 1>,
+                <&tog_off 1>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 500>;
@@ -80,7 +80,7 @@
             bindings =
                 <&tog_off 1>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 1>,
+                <&bt BT_SEL 3>,
                 <&macro_wait_time 500>,
                 <&tog_on 1>;
 
@@ -98,6 +98,13 @@
                 <&tog_on 1>;
 
             label = "WINF";
+        };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_off 1>;
+            label = "TEST";
         };
     };
 
@@ -137,12 +144,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_layer_Mac {
             bindings = <
 &kp LC(F)             &kp ESC                &kp L           &kp U               &kp F                                         &kp LG(SPACE)  &kp W              &kp R                &kp Y    &kp P
-&kp Q                 &mt LEFT_GUI E         &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT O                   &kp RC(A)  &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_CONTROL N  &lt 5 S  &lt 5 H
-&mt LC(V) LC(C)       &kp Z                  &kp X           &kp C               &kp V             &kp LC(Z)        &kp RC(F)  &kp G          &kp D              &kp M                &lt 6 J  &kp B
-&kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &none           &kp DELETE          &lt 2 ENTER       &kp BACKSPACE    &lt 7 TAB  &lt 1 SPACE                                                     &lt_to_layer_0 6 A
+&kp Q                 &mt LEFT_GUI E         &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT O                   &kp RC(A)  &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_CONTROL N  &lt 6 S  &lt 6 H
+&mt LC(V) LC(C)       &kp Z                  &kp X           &kp C               &kp V             &kp LC(Z)        &kp RC(F)  &kp G          &kp D              &kp M                &lt 7 J  &kp B
+&kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &none           &kp DELETE          &lt 3 ENTER       &kp BACKSPACE    &lt 8 TAB  &lt 2 SPACE                                                     &lt_to_layer_0 7 A
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        default_layer_Win {
+            bindings = <
+&kp LC(F)             &kp ESC                &kp L           &kp U               &kp F                                         &kp LG(SPACE)  &kp W              &kp R                &kp Y    &kp P
+&kp Q                 &mt LEFT_GUI E         &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT O                   &kp RC(A)  &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_CONTROL N  &lt 6 S  &lt 6 H
+&mt LC(V) LC(C)       &kp Z                  &kp X           &kp C               &kp V             &kp LC(Z)        &kp RC(F)  &kp G          &kp D              &kp M                &lt 7 J  &kp B
+&kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &none           &kp DELETE          &lt 3 ENTER       &kp BACKSPACE    &lt 8 TAB  &lt 2 SPACE                                                     &lt_to_layer_0 7 A
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -151,7 +169,7 @@
         layer_1 {
             bindings = <
 &trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR             &kp PLUS     &trans         &kp PERCENT
-&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 3 MINUS  &kp SLASH      &kp QMARK
+&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 4 MINUS  &kp SLASH      &kp QMARK
 &trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK           &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
 &trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                                     &kp F12
             >;
@@ -195,8 +213,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &kp LA(M)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB2   &mo 5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &none     &none      &mo 6   &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB2   &mo 6   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &none     &none      &mo 7   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                               &trans
             >;
 
@@ -215,6 +233,15 @@
         };
 
         layer_7 {
+            bindings = <
+&kp CAPSLOCK    &kp F1  &kp F2      &kp F3   &kp F4                     &trans          &trans            &trans        &trans         &trans
+&kp KP_NUMLOCK  &kp F5  &kp F6      &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
+&kp SCROLLLOCK  &kp F9  &kp T       &kp F11  &kp F12  &trans    &trans  &trans          &trans            &trans        &trans         &trans
+&winP           &mac    &bt BT_NXT  &trans   &trans   &trans    &trans  &trans                                                         &trans
+            >;
+        };
+
+        layer_8 {
             bindings = <
 &kp CAPSLOCK    &kp F1  &kp F2      &kp F3   &kp F4                     &trans          &trans            &trans        &trans         &trans
 &kp KP_NUMLOCK  &kp F5  &kp F6      &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
