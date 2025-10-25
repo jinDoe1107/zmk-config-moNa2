@@ -80,7 +80,7 @@
             bindings =
                 <&tog_off 1>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 3>,
+                <&bt BT_SEL 1>,
                 <&macro_wait_time 500>,
                 <&tog_on 1>;
 
@@ -93,7 +93,7 @@
             bindings =
                 <&tog_off 1>,
                 <&macro_wait_time 200>,
-                <&bt BT_SEL 2>,
+                <&bt BT_SEL 3>,
                 <&macro_wait_time 500>,
                 <&tog_on 1>;
 
@@ -152,10 +152,10 @@
 
         default_layer_Mac {
             bindings = <
-&kp LC(F)             &kp ESC                &kp L           &kp U               &kp F                                         &kp LG(SPACE)  &kp W              &kp R                &kp Y    &kp P
-&kp Q                 &mt LEFT_GUI E         &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT O                   &kp RC(A)  &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_CONTROL N  &lt 6 S  &lt 6 H
-&mt LC(V) LC(C)       &kp Z                  &kp X           &kp C               &kp V             &kp LC(Z)        &kp RC(F)  &kp G          &kp D              &kp M                &lt 7 J  &kp B
-&kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &none           &kp DELETE          &lt 3 ENTER       &kp BACKSPACE    &lt 8 TAB  &lt 2 SPACE                                                     &lt_to_layer_0 7 A
+&kp LG(F)             &kp ESC                &kp L           &kp U           &kp F                                         &kp LC(SPACE)  &kp W              &kp R                &kp Y    &kp P
+&kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RG(A)  &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_COMMAND N  &lt 6 S  &lt 6 H
+&mt LG(V) LG(C)       &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp RG(F)  &kp G          &kp D              &kp M                &lt 7 J  &kp B
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &kp DELETE      &lt 3 ENTER       &kp BACKSPACE    &lt 8 TAB  &lt 2 SPACE                                                     &lt_to_layer_0 7 A
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -172,7 +172,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_1 {
+        layer_1_mac {
             bindings = <
 &trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR             &kp PLUS     &trans         &kp PERCENT
 &kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 4 MINUS  &kp SLASH      &kp QMARK
@@ -183,12 +183,12 @@
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
-        layer_2 {
+        layer_2_mac {
             bindings = <
-&none      &trans  &kp PAGE_UP              &kp UP_ARROW                 &kp HOME                                                     &kp CARET         &kp N7                    &kp N8                      &kp N9                  &kp RIGHT_PARENTHESIS
-&trans     &trans  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LEFT_SHIFT RIGHT_ARROW                   &kp UNDERSCORE  &kp EXCLAMATION   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL NUMBER_5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI NUMBER_0
-&kp LG(X)  &trans  &kp PAGE_DOWN            &trans                       &kp END                     &kp LC(LS(Z))    &trans          &kp LEFT_BRACKET  &kp NUMBER_1              &kp NUMBER_2                &kp NUMBER_3            &kp BACKSLASH
-&trans     &trans  &trans                   &trans                       &trans                      &trans           &kp DOT         &kp EQUAL                                                                                       &kp PIPE
+&none      &trans  &kp PAGE_UP              &kp UP_ARROW                 &kp HOME                                                     &kp CARET         &kp N7                    &kp N8                          &kp N9                  &kp RIGHT_PARENTHESIS
+&trans     &trans  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LEFT_SHIFT RIGHT_ARROW                   &kp UNDERSCORE  &kp EXCLAMATION   &mt RIGHT_SHIFT NUMBER_4  &mt RG(RIGHT_CONTROL) NUMBER_5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI NUMBER_0
+&kp LG(X)  &trans  &kp PAGE_DOWN            &trans                       &kp END                     &kp LC(LS(Z))    &trans          &kp LEFT_BRACKET  &kp NUMBER_1              &kp NUMBER_2                    &kp NUMBER_3            &kp BACKSLASH
+&trans     &trans  &trans                   &trans                       &trans                      &trans           &kp DOT         &kp EQUAL                                                                                           &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -240,10 +240,10 @@
 
         layer_7 {
             bindings = <
-&kp CAPSLOCK    &kp F1  &kp F2      &kp F3   &kp F4                     &trans          &trans            &trans        &trans         &trans
-&kp KP_NUMLOCK  &kp F5  &kp F6      &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
-&kp SCROLLLOCK  &kp F9  &kp T       &kp F11  &kp F12  &trans    &trans  &trans          &trans            &trans        &trans         &trans
-&winP           &mac    &bt BT_NXT  &trans   &trans   &trans    &trans  &trans                                                         &trans
+&kp CAPSLOCK    &kp F1  &kp F2  &kp F3   &kp F4                     &trans          &trans            &trans        &trans         &trans
+&kp KP_NUMLOCK  &kp F5  &kp F6  &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
+&kp SCROLLLOCK  &kp F9  &kp T   &kp F11  &kp F12  &trans    &trans  &trans          &trans            &trans        &trans         &trans
+&mac            &winP   &winF   &trans   &trans   &trans    &trans  &trans                                                         &trans
             >;
         };
 
