@@ -186,10 +186,10 @@
 
         layer_1_win {
             bindings = <
-&trans    &trans      &kp LS(GRAVE)  &kp CARET         &kp GRAVE                                 &kp F1  &kp LS(LC(NUMBER_4))   &kp COLON     &trans         &kp LS(N5)
-&kp HASH  &kp LS(N8)  &kp LS(N9)     &kp LS(NUMBER_6)  &kp LS(N7)                        &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 6 MINUS   &kp SLASH      &kp QMARK
-&trans    &kp LT      &kp GT         &kp LBKT          &kp LS(INT_YEN)  &trans           &trans  &trans  &kp ASTERISK           &kp LS(BSLH)  &kp BACKSLASH  &kp LS(N1)
-&trans    &trans      &trans         &trans            &kp PERIOD       &kp SEMICOLON    &trans  &trans                                                      &kp F12
+&trans    &trans      &kp LS(EQUAL)  &kp CARET         &kp LS(AT_SIGN)                           &kp GRAVE  &kp LS(NUMBER_4)       &kp COLON     &trans       &kp LS(N5)
+&kp HASH  &kp LS(N8)  &kp LS(N9)     &kp LS(NUMBER_6)  &kp LS(N7)                        &trans  &trans     &mt RIGHT_SHIFT EQUAL  &lt 6 MINUS   &kp SLASH    &kp QMARK
+&trans    &kp LT      &kp GT         &kp LBKT          &kp LS(INT_YEN)  &trans           &trans  &trans     &kp LS(SQT)            &kp LS(BSLH)  &kp INT_YEN  &kp LS(N1)
+&trans    &trans      &trans         &trans            &kp PERIOD       &kp SEMICOLON    &trans  &trans                                                       &kp F12
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -219,10 +219,10 @@
 
         layer_3_win {
             bindings = <
-&trans  &trans             &trans                &trans  &trans                           &trans  &trans  &trans  &trans  &trans
-&trans  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &trans  &kp LS(N2)               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp UNDERSCORE     &kp RIGHT_BRACE       &trans  &trans      &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans             &trans                &trans  &kp COMMA   &kp COLON    &trans  &trans                          &trans
+&trans  &trans             &trans                    &trans  &trans                           &trans  &trans  &trans  &trans  &trans
+&trans  &kp RIGHT_BRACKET  &kp LS(NON_US_BACKSLASH)  &trans  &kp LS(N2)               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp UNDERSCORE     &kp RIGHT_BRACE           &trans  &trans      &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans             &trans                    &trans  &kp COMMA   &kp COLON    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
