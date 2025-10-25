@@ -166,7 +166,7 @@
             bindings = <
 &kp LC(F)             &kp ESC                &kp L           &kp U               &kp F                                          &kp LG(SPACE)  &kp W              &kp R                &kp Y    &kp P
 &kp Q                 &mt LEFT_GUI E         &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT O                   &kp RC(A)   &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_CONTROL N  &lt 7 S  &lt 7 H
-&mt LC(V) LC(C)       &kp Z                  &kp X           &kp C               &kp V             &kp LC(Z)        &kp RC(F)   &kp G          &kp D              &kp M                &lt 8 J  &kp B
+&mt LC(V) LC(C)       &kp Z                  &kp X           &kp C               &kp V             &kp LC(Z)        &kp RC(F)   &kp G          &kp D              &kp M                &lt 9 J  &kp B
 &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &none           &kp DELETE          &lt 4 ENTER       &kp BACKSPACE    &lt 10 TAB  &lt 3 SPACE                                                     &lt_to_layer_0 8 A
             >;
 
@@ -208,10 +208,10 @@
 
         layer_3_mac {
             bindings = <
-&trans  &trans            &trans             &trans  &trans                                     &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp LS(NUMBER_2)                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans            &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &trans  &kp COMMA         &kp LC(COLON)    &trans  &trans                          &trans
+&trans  &trans            &trans             &trans  &trans                                 &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp LS(NUMBER_2)               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans            &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans  &kp COMMA         &kp COLON    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
@@ -252,10 +252,10 @@
 
         SCROLL_win {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                       &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans              &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans              &trans               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
