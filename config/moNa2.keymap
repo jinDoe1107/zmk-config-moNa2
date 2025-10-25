@@ -234,7 +234,7 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };t
+        };
 
         layer_7 {
             bindings = <
