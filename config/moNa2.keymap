@@ -186,10 +186,10 @@
 
         layer_1_win {
             bindings = <
-&trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR             &kp PLUS     &trans         &kp PERCENT
-&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 6 MINUS  &kp SLASH      &kp QMARK
-&trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK           &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
-&trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                                     &kp F12
+&trans    &trans      &kp LS(GRAVE)  &kp CARET         &kp GRAVE                             &kp F1  &kp LS(N7)                 &kp PLUS      &trans         &kp LS(N5)
+&kp HASH  &kp LS(N8)  &kp LS(N9)     &kp LS(NUMBER_6)  &kp LS(N7)                    &trans  &trans  &mt RIGHT_SHIFT LS(EQUAL)  &lt 6 MINUS   &kp SLASH      &kp QMARK
+&trans    &kp LT      &kp GT         &kp LBKT          &kp INT_YEN  &trans           &trans  &trans  &kp ASTERISK               &kp LS(BSLH)  &kp BACKSLASH  &kp LS(N1)
+&trans    &trans      &trans         &trans            &kp PERIOD   &kp SEMICOLON    &trans  &trans                                                          &kp F12
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -208,10 +208,10 @@
 
         layer_3_mac {
             bindings = <
-&trans  &trans            &trans             &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp DOUBLE_QUOTES               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans             &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &trans  &kp COMMA          &kp COLON    &trans  &trans                          &trans
+&trans  &trans            &trans             &trans  &trans                                     &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp LS(NUMBER_2)                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans            &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans  &kp COMMA         &kp LC(COLON)    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
@@ -219,10 +219,10 @@
 
         layer_3_win {
             bindings = <
-&trans  &trans            &trans             &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp DOUBLE_QUOTES               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans             &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans             &trans  &kp COMMA          &kp COLON    &trans  &trans                          &trans
+&trans  &trans            &trans             &trans  &trans                           &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp LS(N2)               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans      &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans  &kp COMMA   &kp COLON    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
@@ -265,7 +265,7 @@
             bindings = <
 &kp CAPSLOCK    &kp F1  &kp F2  &kp F3   &kp F4                     &trans          &trans            &trans        &trans         &trans
 &kp KP_NUMLOCK  &kp F5  &kp F6  &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
-&kp SCROLLLOCK  &kp F9  &kp T   &kp F11  &kp F12  &trans    &trans  &trans          &trans            &trans        &trans         &trans
+&kp SCROLLLOCK  &kp F9  &kp T   &kp F11  &kp F12  &trans    &trans  &trans          &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2   &trans
 &mac            &winP   &winF   &trans   &trans   &trans    &trans  &trans                                                         &trans
             >;
         };
