@@ -45,7 +45,7 @@
         mc {
             bindings = <&mkp MB3>;
             key-positions = <18 17>;
-            layers = <6>;
+            layers = <7>;
         };
 
         raycast {
@@ -108,7 +108,7 @@
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 3>,
                 <&macro_wait_time 500>,
-                <&tog_on 3>;
+                <&tog_on 4>;
 
             label = "TEST";
         };
@@ -124,12 +124,13 @@
             tapping-term-ms = <200>;
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        scroll_up_down: sensorRotateMouseWheelUpDown {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
             tap-ms = <20>;
+            label = "mouse";
         };
 
         tog_on: toggle_layer_on_only {
@@ -152,10 +153,10 @@
 
         default_layer_Mac {
             bindings = <
-&kp LG(F)             &kp ESC                &kp L           &kp U           &kp F                                         &kp LC(SPACE)  &kp W              &kp R                &kp Y    &kp P
-&kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RG(A)  &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_COMMAND N  &lt 6 S  &lt 6 H
-&mt LG(V) LG(C)       &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp RG(F)  &kp G          &kp D              &kp M                &lt 7 J  &kp B
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &kp DELETE      &lt 3 ENTER       &kp BACKSPACE    &lt 8 TAB  &lt 2 SPACE                                                     &lt_to_layer_0 7 A
+&kp LG(F)             &kp ESC                &kp L           &kp U           &kp F                                          &kp LC(SPACE)  &kp W              &kp R                &kp Y    &kp P
+&kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RG(A)   &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_COMMAND N  &lt 7 S  &lt 7 H
+&mt LG(V) LG(C)       &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp RG(F)   &kp G          &kp D              &kp M                &lt 8 J  &kp B
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &kp DELETE      &lt 4 ENTER       &kp BACKSPACE    &lt 10 TAB  &lt 2 SPACE                                                     &lt_to_layer_0 8 A
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -163,10 +164,10 @@
 
         default_layer_Win {
             bindings = <
-&kp LC(F)             &kp ESC                &kp L           &kp U               &kp F                                         &kp LG(SPACE)  &kp W              &kp R                &kp Y    &kp P
-&kp Q                 &mt LEFT_GUI E         &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT O                   &kp RC(A)  &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_CONTROL N  &lt 6 S  &lt 6 H
-&mt LC(V) LC(C)       &kp Z                  &kp X           &kp C               &kp V             &kp LC(Z)        &kp RC(F)  &kp G          &kp D              &kp M                &lt 7 J  &kp B
-&kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &none           &kp DELETE          &lt 3 ENTER       &kp BACKSPACE    &lt 8 TAB  &lt 2 SPACE                                                     &lt_to_layer_0 7 A
+&kp LC(F)             &kp ESC                &kp L           &kp U               &kp F                                          &kp LG(SPACE)  &kp W              &kp R                &kp Y    &kp P
+&kp Q                 &mt LEFT_GUI E         &mt LEFT_ALT I  &mt LEFT_CONTROL A  &mt LEFT_SHIFT O                   &kp RC(A)   &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_CONTROL N  &lt 7 S  &lt 7 H
+&mt LC(V) LC(C)       &kp Z                  &kp X           &kp C               &kp V             &kp LC(Z)        &kp RC(F)   &kp G          &kp D              &kp M                &lt 8 J  &kp B
+&kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &none           &kp DELETE          &lt 4 ENTER       &kp BACKSPACE    &lt 10 TAB  &lt 3 SPACE                                                     &lt_to_layer_0 8 A
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -175,7 +176,18 @@
         layer_1_mac {
             bindings = <
 &trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR             &kp PLUS     &trans         &kp PERCENT
-&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 4 MINUS  &kp SLASH      &kp QMARK
+&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 5 MINUS  &kp SLASH      &kp QMARK
+&trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK           &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
+&trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                                     &kp F12
+            >;
+
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+        };
+
+        layer_1_win {
+            bindings = <
+&trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR             &kp PLUS     &trans         &kp PERCENT
+&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 6 MINUS  &kp SLASH      &kp QMARK
 &trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK           &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
 &trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                                     &kp F12
             >;
@@ -194,7 +206,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        layer_3_mac {
             bindings = <
 &trans  &trans            &trans             &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp DOUBLE_QUOTES               &trans  &trans  &trans  &trans  &trans  &trans
@@ -205,31 +217,44 @@
             sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
-        layer_4 {
+        layer_3_win {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans            &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans            &trans             &trans  &trans                                  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp DOUBLE_QUOTES               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans             &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans  &kp COMMA          &kp COLON    &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &kp LA(M)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB2   &mo 6   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &none     &none      &mo 7   &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mkp MB1  &mkp MB2   &mo 7   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &none     &none      &mo 8   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                               &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
-        SCROLL {
+        SCROLL_mac {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans                &trans                 &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                       &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        SCROLL_win {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans                &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                                       &trans
             >;
 
@@ -242,15 +267,6 @@
 &kp KP_NUMLOCK  &kp F5  &kp F6  &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
 &kp SCROLLLOCK  &kp F9  &kp T   &kp F11  &kp F12  &trans    &trans  &trans          &trans            &trans        &trans         &trans
 &mac            &winP   &winF   &trans   &trans   &trans    &trans  &trans                                                         &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&kp CAPSLOCK    &kp F1  &kp F2      &kp F3   &kp F4                     &trans          &trans            &trans        &trans         &trans
-&kp KP_NUMLOCK  &kp F5  &kp F6      &kp F7   &kp F8             &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RIGHT_GUI  &trans
-&kp SCROLLLOCK  &kp F9  &kp T       &kp F11  &kp F12  &trans    &trans  &trans          &trans            &trans        &trans         &trans
-&test           &mac    &bt BT_NXT  &trans   &trans   &trans    &trans  &trans                                                         &trans
             >;
         };
     };
