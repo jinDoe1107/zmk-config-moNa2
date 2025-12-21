@@ -219,10 +219,10 @@
 
         layer_3_win {
             bindings = <
-&trans  &trans           &trans    &trans  &trans                                     &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(RBKT)     &kp PIPE  &trans  &kp LS(NUMBER_2)                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(INT_YEN)  &kp PIPE  &trans  &trans            &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans    &trans  &kp COMMA         &kp SEMICOLON    &trans  &trans                          &trans
+&trans  &trans             &trans         &trans  &trans                                        &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(RBKT)       &kp PIPE       &trans  &kp LS(NUMBER_2)                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans            &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans             &trans         &trans  &kp COMMA         &kp SINGLE_QUOTE    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
@@ -230,10 +230,10 @@
 
         layer_3_mac {
             bindings = <
-&trans  &trans            &trans           &trans  &trans                                             &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACE  &trans  &kp LS(DOUBLE_QUOTES)                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACE  &trans  &trans                 &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans           &trans  &kp COMMA              &kp SINGLE_QUOTE    &trans  &trans                          &trans
+&trans  &trans            &trans             &trans  &trans                                      &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &kp LS(DOUBLE_QUOTES)               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans                 &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &trans  &kp COMMA              &kp COLON    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
