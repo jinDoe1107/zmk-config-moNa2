@@ -155,7 +155,7 @@
             bindings = <
 &kp LG(F)             &kp ESC                &kp L           &kp U           &kp F                                          &kp LC(SPACE)  &kp W              &kp R                &kp Y    &kp P
 &kp Q                 &mt LEFT_CONTROL E     &mt LEFT_ALT I  &mt LEFT_GUI A  &mt LEFT_SHIFT O                   &kp RG(A)   &kp K          &mt RIGHT_SHIFT T  &mt RIGHT_COMMAND N  &lt 8 S  &lt 8 H
-&mt LG(V) LG(C)       &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp RG(F)   &kp G          &kp D              &kp M                &lt 9 J  &kp B
+&mt LG(V) LG(C)       &kp Z                  &kp X           &kp C           &kp V             &kp LG(Z)        &kp RG(F)   &kp G          &kp D              &mt RIGHT_ALT M      &lt 9 J  &kp B
 &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none           &kp DELETE      &lt 4 ENTER       &kp BACKSPACE    &lt 11 TAB  &lt 2 SPACE                                                     &lt_to_layer_0 9 A
             >;
 
@@ -175,10 +175,10 @@
 
         layer_1_mac {
             bindings = <
-&trans    &trans                &kp TILDE              &kp CARET      &kp GRAVE                                  &kp F1  &kp DOLLAR             &kp PLUS     &trans         &kp PERCENT
-&kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 7 MINUS  &kp SLASH      &kp QMARK
-&trans    &kp LT                &kp GT                 &kp AT_SIGN    &kp PIPE          &trans           &trans  &trans  &kp ASTERISK           &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
-&trans    &trans                &trans                 &trans         &kp PERIOD        &kp SEMICOLON    &trans  &trans                                                     &kp LG(F12)
+&trans    &trans                             &kp TILDE                       &kp CARET               &kp GRAVE                                             &kp F1  &kp DOLLAR             &kp PLUS     &trans         &kp PERCENT
+&kp HASH  &mt LEFT_CONTROL LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LEFT_GUI AMPERSAND  &mt LEFT_SHIFT SINGLE_QUOTE                   &trans  &trans  &mt RIGHT_SHIFT EQUAL  &lt 7 MINUS  &kp SLASH      &kp QMARK
+&trans    &kp LT                             &kp GT                          &kp AT_SIGN             &kp PIPE                     &trans           &trans  &trans  &kp ASTERISK           &kp UNDER    &kp BACKSLASH  &kp EXCLAMATION
+&trans    &trans                             &trans                          &trans                  &kp PERIOD                   &kp SEMICOLON    &trans  &trans                                                     &kp LG(F12)
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -186,10 +186,10 @@
 
         layer_1_win {
             bindings = <
-&trans    &trans            &kp LS(EQUAL)     &kp EQUAL         &kp LS(LBKT)                               &kp F1  &kp LS(NUMBER_4)                &kp COLON                &trans       &kp LS(NUMBER_5)
-&kp HASH  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)                   &trans  &trans  &mt RIGHT_SHIFT LS(UNDERSCORE)  &lt 6 MINUS              &kp SLASH    &kp QMARK
-&trans    &kp LT            &kp GT            &kp LEFT_BRACKET  &kp LS(INT_YEN)   &trans           &trans  &trans  &kp LS(DOUBLE_QUOTES)           &kp LS(INTERNATIONAL_1)  &kp INT_YEN  &kp LS(NUMBER_1)
-&trans    &trans            &trans            &trans            &kp PERIOD        &kp SEMICOLON    &trans  &trans                                                                        &kp F12
+&trans    &trans                     &kp LS(EQUAL)              &kp EQUAL                      &kp LS(LBKT)                                          &kp F1  &kp LS(NUMBER_4)                &kp COLON                &trans       &kp LS(NUMBER_5)
+&kp HASH  &mt LEFT_GUI LS(NUMBER_8)  &mt LEFT_ALT LS(NUMBER_9)  &mt LEFT_CONTROL LS(NUMBER_6)  &mt LEFT_SHIFT LS(NUMBER_7)                   &trans  &trans  &mt RIGHT_SHIFT LS(UNDERSCORE)  &lt 6 MINUS              &kp SLASH    &kp QMARK
+&trans    &kp LT                     &kp GT                     &kp LEFT_BRACKET               &kp LS(INT_YEN)              &trans           &trans  &trans  &kp LS(DOUBLE_QUOTES)           &kp LS(INTERNATIONAL_1)  &kp INT_YEN  &kp LS(NUMBER_1)
+&trans    &trans                     &trans                     &trans                         &kp PERIOD                   &kp SEMICOLON    &trans  &trans                                                                        &kp F12
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
